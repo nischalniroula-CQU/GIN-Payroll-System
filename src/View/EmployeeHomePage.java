@@ -25,7 +25,7 @@ public class EmployeeHomePage extends JFrame implements ActionListener {
         f1=new Font("MS UI Gothic",Font.BOLD,18);
         
        
-        ImageIcon ic=new ImageIcon(ClassLoader.getSystemResource("View/homepage.jpg"));
+        ImageIcon ic=new ImageIcon(ClassLoader.getSystemResource("View/Icon/ehomepage.jpg"));
         Image img=ic.getImage().getScaledInstance(1200,800,Image.SCALE_DEFAULT);
         ImageIcon ic1=new ImageIcon(img);
         l1=new JLabel(ic1);
@@ -58,20 +58,20 @@ public class EmployeeHomePage extends JFrame implements ActionListener {
         //Updatefonts
         
         //Adding Background to the menu
-        m1.setBackground(Color.BLACK);
+        m1.setBackground(Color.DARK_GRAY);
         
         men1.setForeground(Color.WHITE);
         men2.setForeground(Color.WHITE);
         men3.setForeground(Color.WHITE);
         
         //Updating color of the menu items
-          men1item1.setBackground(Color.BLACK); 
-          men2item1.setBackground(Color.BLACK); 
-          men3item1.setBackground(Color.BLACK);
+          men1item1.setBackground(Color.WHITE); 
+          men2item1.setBackground(Color.WHITE); 
+          men3item1.setBackground(Color.WHITE);
           
-          men1item1.setForeground(Color.GREEN);  
-          men2item1.setForeground(Color.GREEN); 
-          men3item1.setForeground(Color.GREEN); 
+          men1item1.setForeground(Color.BLACK);  
+          men2item1.setForeground(Color.BLACK); 
+          men3item1.setForeground(Color.BLACK); 
           
           setJMenuBar(m1);
           add(l1);
