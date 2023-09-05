@@ -6,6 +6,94 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.util.Locale;
 
+
+public class EmployeeHomePage extends JFrame implements ActionListener {
+    
+    JLabel l1,l2,l3,l4,l5,l6,l7,l8,l9,l10;
+    Font f,f1,f2;
+    JPanel p1;
+    
+    EmployeeHomePage()
+    {
+        super("Employee Home Page");
+        setSize(1200,800);
+        setLocation(0,0);
+        
+        //fonts
+        f=new Font("Lucida Fax",Font.BOLD,20);
+        f2=new Font("Gadugi",Font.BOLD,35);
+        f1=new Font("MS UI Gothic",Font.BOLD,18);
+        
+       
+        ImageIcon ic=new ImageIcon(ClassLoader.getSystemResource("View/homepage.jpg"));
+        Image img=ic.getImage().getScaledInstance(1200,800,Image.SCALE_DEFAULT);
+        ImageIcon ic1=new ImageIcon(img);
+        l1=new JLabel(ic1);
+        //System.out.println(ic.exists());
+        
+        
+       
+       //Menu and Menu Item
+       
+       JMenuBar m1 = new JMenuBar();
+       JMenu men1 = new JMenu("Schedule");
+       JMenuItem men1item1 = new JMenuItem ("Update Hours");
+       
+       JMenu men2 = new JMenu("Roster");
+       JMenuItem men2item1 = new JMenuItem ("View Roaster");
+       
+       JMenu men3 = new JMenu("Profile");
+       JMenuItem men3item1 = new JMenuItem ("Edit Profile");
+       
+        //Adding MenuItem in Menu
+        men1.add(men1item1);
+        men2.add(men2item1);
+        men3.add(men3item1);
+        
+        //Adding Menu in menubar
+        m1.add(men1);
+        m1.add(men2);
+        m1.add(men3);
+        
+        //Updatefonts
+        
+        //Adding Background to the menu
+        m1.setBackground(Color.BLACK);
+        
+        men1.setForeground(Color.WHITE);
+        men2.setForeground(Color.WHITE);
+        men3.setForeground(Color.WHITE);
+        
+        //Updating color of the menu items
+          men1item1.setBackground(Color.BLACK); 
+          men2item1.setBackground(Color.BLACK); 
+          men3item1.setBackground(Color.BLACK);
+          
+          men1item1.setForeground(Color.GREEN);  
+          men2item1.setForeground(Color.GREEN); 
+          men3item1.setForeground(Color.GREEN); 
+          
+          setJMenuBar(m1);
+          add(l1);
+          
+    }
+
+    public void actionPerformed(ActionEvent e) {
+        
+    }
+    
+    public static void main (String[] args){
+        new EmployeeHomePage().setVisible(true);
+    }
+    
+}
+
+
+
+
+
+/*
+
 public class EmployeeHomePage extends JFrame {
     // Define components for the Employee HomePage
     private JFrame f;
@@ -44,3 +132,5 @@ public class EmployeeHomePage extends JFrame {
         new EmployeeHomePage();
     }
 }
+
+*/
