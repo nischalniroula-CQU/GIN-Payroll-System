@@ -28,7 +28,8 @@ public class ConnectionClass
             ex.printStackTrace();
         }
     }
-    public static void main(String[] args) 
+    
+    public static void main (String [] args)
     {
         new ConnectionClass();
     }

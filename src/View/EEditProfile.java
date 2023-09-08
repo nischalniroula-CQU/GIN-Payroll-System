@@ -8,6 +8,6 @@ package View;
  *
  * @author nischalniroula
  */
-public class HomePage {
+public class EEditProfile {
     
 }
