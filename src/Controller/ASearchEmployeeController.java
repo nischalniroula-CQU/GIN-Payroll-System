@@ -3,7 +3,6 @@ package Controller;
 import View.*;
 
 import View.ASearchEmployeeView;
-import View.ViewEmployeeData;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -29,7 +28,7 @@ public class ASearchEmployeeController implements ActionListener {
             // Get the employee ID entered by the user and open the employee data view
             String employeeId = view.getTextField().getText();
             view.getFrame().setVisible(false);
-            new ViewEmployeeData(employeeId);
+            new AEmployeeDataController(employeeId);
         }
     }
 

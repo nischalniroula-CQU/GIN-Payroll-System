@@ -8,6 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
+import java.sql.*;
 
 public class ARegisterEmployeeController implements ActionListener {
     private ARegisterEmployeeView view;

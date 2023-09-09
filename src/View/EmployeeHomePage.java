@@ -12,12 +12,15 @@ public class EmployeeHomePage extends JFrame implements ActionListener {
     JLabel l1,l2,l3,l4,l5,l6,l7,l8,l9,l10;
     Font f,f1,f2;
     JPanel p1;
+    private String e_id;
     
-    public EmployeeHomePage()
+    public EmployeeHomePage(String e_id)
     {
         super("Employee Home Page");
         setSize(1200,800);
         setLocation(0,0);
+        
+        this.e_id = e_id;
         
        
         ImageIcon ic=new ImageIcon(ClassLoader.getSystemResource("View/Icon/ehomepage.jpg"));
@@ -99,13 +102,17 @@ public class EmployeeHomePage extends JFrame implements ActionListener {
         else if (comnd.equals("Edit Profile"))
             
         {
-            new EEditProfile();
+            new EEditProfileController(e_id);
         }
         else if (comnd.equals("Exit"))
         {
             System.exit(0);
         }
         
+    }
+    
+    public static void main (String[] args){
+        new EmployeeHomePage("Print Data").setVisible(true);
     }
     
     

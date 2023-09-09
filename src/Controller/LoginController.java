@@ -28,7 +28,8 @@ public class LoginController {
 
                         if (rs.next()) {
                             if (selectedRole.equals("Employee")) {
-                                new EmployeeHomePage().setVisible(true);
+                                 String e_id = rs.getString("username");
+                                new EmployeeHomePage(e_id).setVisible(true);
                                 view.setVisible(false);
                             } else if (selectedRole.equals("Admin Staff")) {
                                 new AdminStaffHomePage().setVisible(true);
