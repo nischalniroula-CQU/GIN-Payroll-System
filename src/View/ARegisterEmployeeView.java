@@ -8,6 +8,7 @@ public class ARegisterEmployeeView extends JFrame {
     private JLabel id, id1, id2, id3, id4, id5, id6, id7;
     private JTextField t1, t2, t3, t4, t5, t6, t7;
     private JButton b1, b2;
+    private JLabel idLabel; // Added label for displaying ID
 
     public ARegisterEmployeeView() {
         f = new JFrame("Register Employee");
@@ -98,7 +99,17 @@ public class ARegisterEmployeeView extends JFrame {
         
         t7=new JTextField();
         t7.setBounds(150,360,300,40);
+        t7.setEditable(false);
         id.add(t7);
+        
+        
+        // Create a label for displaying the ID
+        idLabel = new JLabel("");
+        idLabel.setBounds(160, 3755, 300, 40);
+        idLabel.setFont(new Font("Poppins", Font.PLAIN, 20));
+        idLabel.setForeground(Color.WHITE);
+        id.add(idLabel);
+
         
         b1 = new JButton("Submit");
         b1.setBackground(Color.GREEN);
@@ -116,10 +127,7 @@ public class ARegisterEmployeeView extends JFrame {
         b2.setFont(new Font("Poppins",Font.BOLD,15));
         b2.setOpaque(true);
 
-        
         id.add(b2);
-        
-        
 
         f.setVisible(true);
         f.setSize(1200, 800);
@@ -162,13 +170,16 @@ public class ARegisterEmployeeView extends JFrame {
     public JTextField getT7() {
         return t7;
     }
-        public JFrame getF() {
+
+    public JLabel getIdLabel() {
+        return idLabel;
+    }
+
+    public JFrame getF() {
         return f;
     }
 
     public void setF(JFrame f) {
         this.f = f;
     }
-
-    //This is Branch Two
 }
