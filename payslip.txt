@@ -1,0 +1,10 @@
+Payslip Details
+Employee ID: 04
+Start Date: 2023-08-04
+End Date: 2023-08-10
+Hours: 30.00
+Wage: 23.00
+Total Gross: 690.00
+Tax: 172.50
+Superannuation: 75.90
+Total Payable: 517.50

@@ -37,8 +37,8 @@ public class EmployeeHomePage extends JFrame implements ActionListener {
        JMenu men1 = new JMenu("Schedule");
        JMenuItem men1item1 = new JMenuItem ("Update Hours");
        
-       JMenu men2 = new JMenu("Roaster");
-       JMenuItem men2item1 = new JMenuItem ("View Roaster");
+       JMenu men2 = new JMenu("Payslip");
+       JMenuItem men2item1 = new JMenuItem ("View Payslip");
        
        JMenu men3 = new JMenu("Profile");
        JMenuItem men3item1 = new JMenuItem ("Edit Profile");
@@ -92,11 +92,11 @@ public class EmployeeHomePage extends JFrame implements ActionListener {
         
         if(comnd.equals("Update Hours"))
         {
-            new EUpdateHours();
+            new EUpdateHours(e_id);
         }
-        else if (comnd.equals("View Roaster"))
+        else if (comnd.equals("View Payslip"))
         {
-            new EViewRoaster();
+            new ESearchPayslip(e_id);
         }
         
         else if (comnd.equals("Edit Profile"))
