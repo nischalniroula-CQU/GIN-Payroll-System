@@ -1,0 +1,7 @@
+Payslip Details
+Start Date: 2023-08-04
+End Date: 2023-08-10
+Total Gross Paid: 690.00
+Total Amount Transferred: 517.50
+Total Tax Paid: 172.50
+Total Super Paid: 75.90

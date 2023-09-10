@@ -102,7 +102,7 @@ public class AdminStaffHomePage extends JFrame implements ActionListener {
         }
         else if (comnd.equals("View Payroll Information"))
         {
-            new AViewPayrollInfo();
+            new APayrollSearch();
         }
         else if (comnd.equals("Exit"))
         {
