@@ -13,39 +13,46 @@ public class LoginView extends JFrame {
     public LoginView() {
         setTitle("Welcome to GIN Payroll System");
         setLayout(null);
-        
+
+        // Load the background image
+        ImageIcon backgroundImage = new ImageIcon(ClassLoader.getSystemResource("View/Icon/loginbackground.jpg"));
+        Image img = backgroundImage.getImage().getScaledInstance(500, 250, Image.SCALE_SMOOTH);
+        ImageIcon backgroundIcon = new ImageIcon(img);
+        JLabel backgroundLabel = new JLabel(backgroundIcon);
+        backgroundLabel.setBounds(0, 0, 500, 250);
+        add(backgroundLabel);
 
         roleComboBox = new JComboBox<>(new String[]{"Employee", "Admin Staff"});
         roleComboBox.setBounds(40, 20, 150, 30);
-        add(roleComboBox);
+        backgroundLabel.add(roleComboBox);
 
         l1 = new JLabel("Username");
         l1.setBounds(40, 70, 100, 30);
-        add(l1);
+        backgroundLabel.add(l1);
 
         l2 = new JLabel("Password");
         l2.setBounds(40, 120, 100, 30);
-        add(l2);
+        backgroundLabel.add(l2);
 
         t1 = new JTextField();
         t1.setBounds(150, 70, 150, 30);
-        add(t1);
+        backgroundLabel.add(t1);
 
         t2 = new JPasswordField();
         t2.setBounds(150, 120, 150, 30);
-        add(t2);
+        backgroundLabel.add(t2);
 
         b1 = new JButton("Login");
         b1.setBounds(40, 170, 120, 30);
         b1.setFont(new Font("serif", Font.BOLD, 15));
         b1.setForeground(Color.DARK_GRAY);
-        add(b1);
+        backgroundLabel.add(b1);
 
         b2 = new JButton("Cancel");
         b2.setBounds(180, 170, 120, 30);
         b2.setFont(new Font("serif", Font.BOLD, 15));
         b2.setForeground(Color.DARK_GRAY);
-        add(b2);
+        backgroundLabel.add(b2);
 
         getContentPane().setBackground(Color.WHITE);
 
@@ -53,7 +60,6 @@ public class LoginView extends JFrame {
         setLocation(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-        
     }
 
     public JComboBox<String> getRoleComboBox() {

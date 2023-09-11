@@ -10,10 +10,19 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import java.sql.*;
 
+/**
+ * The controller class for registering new employees.
+ */
 public class ARegisterEmployeeController implements ActionListener {
     private ARegisterEmployeeView view;
     private EmployeeModel model;
 
+    /**
+     * Constructs an instance of the ARegisterEmployeeController.
+     *
+     * @param view  The ARegisterEmployeeView instance to control.
+     * @param model The EmployeeModel instance to manage employee data.
+     */
     public ARegisterEmployeeController(ARegisterEmployeeView view, EmployeeModel model) {
         this.view = view;
         this.model = model;
@@ -92,6 +101,11 @@ public class ARegisterEmployeeController implements ActionListener {
         }
     }
 
+    /**
+     * The main method to start the ARegisterEmployeeController.
+     *
+     * @param args The command-line arguments (not used in this context).
+     */
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             ARegisterEmployeeView view = new ARegisterEmployeeView();

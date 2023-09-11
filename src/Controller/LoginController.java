@@ -8,9 +8,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
 
+/**
+ * Controller class for the login view.
+ */
 public class LoginController {
     private LoginView view;
 
+    /**
+     * Constructs an instance of the LoginController.
+     */
     public LoginController() {
         view = new LoginView();
 
@@ -28,11 +34,12 @@ public class LoginController {
 
                         if (rs.next()) {
                             if (selectedRole.equals("Employee")) {
-                                 String e_id = rs.getString("username");
-                                new EmployeeHomePage(e_id).setVisible(true);
+                                String e_id = rs.getString("username");
+                                new EmployeeHomePageController(e_id);
                                 view.setVisible(false);
                             } else if (selectedRole.equals("Admin Staff")) {
-                                new AdminStaffHomePage().setVisible(true);
+                                AdminStaffHomePageView adminStaffHomePageView = new AdminStaffHomePageView();
+                                new AdminStaffHomePageController(adminStaffHomePageView);
                                 view.setVisible(false);
                             }
                             view.setVisible(false);
@@ -52,6 +59,11 @@ public class LoginController {
         });
     }
 
+    /**
+     * Main method to start the LoginController.
+     *
+     * @param args The command-line arguments (not used in this case).
+     */
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {

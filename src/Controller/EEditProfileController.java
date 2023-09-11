@@ -2,15 +2,24 @@ package Controller;
 
 import View.EEditProfileView;
 import View.EmployeeHomePage;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
 
+/**
+ * Controller class for editing employee profiles.
+ */
 public class EEditProfileController implements ActionListener {
     private EEditProfileView view;
     private String e_id;
 
+    /**
+     * Constructs an instance of the EEditProfileController.
+     *
+     * @param eid The employee ID to edit.
+     */
     public EEditProfileController(String eid) {
         this.e_id = eid;
         try {
@@ -38,6 +47,11 @@ public class EEditProfileController implements ActionListener {
         }
     }
 
+    /**
+     * Handles button click events.
+     *
+     * @param e The action event.
+     */
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == view.getSaveButton()) {
             // Get the edited values from JTextFields and update the database

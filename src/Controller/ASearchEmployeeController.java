@@ -2,14 +2,20 @@ package Controller;
 
 import View.*;
 
-import View.ASearchEmployeeView;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The controller class for searching employees.
+ */
 public class ASearchEmployeeController implements ActionListener {
     private ASearchEmployeeView view;
 
+    /**
+     * Constructs an instance of the ASearchEmployeeController.
+     *
+     * @param view The ASearchEmployeeView instance to control.
+     */
     public ASearchEmployeeController(ASearchEmployeeView view) {
         this.view = view;
 
@@ -32,6 +38,11 @@ public class ASearchEmployeeController implements ActionListener {
         }
     }
 
+    /**
+     * The main method to start the ASearchEmployeeController.
+     *
+     * @param args The command-line arguments (not used in this context).
+     */
     public static void main(String[] args) {
         ASearchEmployeeView view = new ASearchEmployeeView();
         new ASearchEmployeeController(view);

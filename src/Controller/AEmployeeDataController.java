@@ -1,17 +1,25 @@
 package Controller;
 
 import View.AdminStaffHomePage;
-
 import View.AEmployeeDataView;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
 
+/**
+ * The controller class for managing employee data.
+ */
 public class AEmployeeDataController implements ActionListener {
     private AEmployeeDataView view;
     private String e_id;
 
+    /**
+     * Constructor to initialize the controller with employee data.
+     *
+     * @param eid The employee ID to retrieve and edit employee data.
+     */
     public AEmployeeDataController(String eid) {
         this.e_id = eid;
         try {
@@ -39,6 +47,11 @@ public class AEmployeeDataController implements ActionListener {
         }
     }
 
+    /**
+     * Handles the actions performed when buttons are clicked.
+     *
+     * @param e The ActionEvent triggered by button clicks.
+     */
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == view.getSaveButton()) {
             // Get the edited values from the view and update the database
