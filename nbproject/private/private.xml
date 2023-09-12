@@ -4,9 +4,22 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/Controller/ConnectionClass.java</file>
-            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/View/LoginPage.java</file>
-            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/View/AdminStaffHomePage.java</file>
-            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/View/EmployeeHomePage.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/View/EmployeeHomePageView.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/Controller/ProjectLauncher.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/Controller/LoginController.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/View/EEditProfileView.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/Controller/EEditProfileController.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/Controller/AEmployeeDataController.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/View/EViewPayslip.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/View/APayrollReport.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/Controller/EmployeeHomePageController.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/Controller/ARegisterEmployeeController.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/Model/EmployeeModel.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/View/EUpdateHours.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/View/ESearchPayslip.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/View/ARegisterEmployeeView.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/View/AEmployeeDataView.java</file>
+            <file>file:/Users/nischalniroula/Desktop/University/Enterprise%20Computing%20Architecture/Week1/GINPayrollSystem/src/View/EViewRoaster.java</file>
         </group>
     </open-files>
 </project-private>

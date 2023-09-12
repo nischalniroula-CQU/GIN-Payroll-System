@@ -27,7 +27,7 @@ public class EUpdateHours implements ActionListener {
 
         JLabel img = new JLabel();
         img.setBounds(0, 0, 1200, 800);
-        img.setLayout(null);
+        img.setLayout( null);
         ImageIcon img1 = new ImageIcon(ClassLoader.getSystemResource("View/Icon/einnerpage.jpg"));
         img.setIcon(img1);
         frame.add(img);
